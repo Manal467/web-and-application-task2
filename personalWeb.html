@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+
+        .footer-content a {
+            color: #001eff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-content a:hover {
+            color: white;
+        }
+          .time-display {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#portfolio">My Portfolio</a></li>
+                
+            </ul>
+             <div id="time-display"></div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to my website</h2>
+            <p>I'm Manal, a Computer Science student majoring in Artificial Intelligence, Web Development, and Programming</p>
+        </section>
+
+        <section id="about">
+            <h2>About me </h2>
+            <p>Computer Science Student with hands-on experience in programming languages (Python, Java, C++) and problem-solving skills.
+                 Adept at collaborating in team projects, managing deadlines efficiently, and adapting to new technologies. 
+                 Advanced English proficiency with a passion for software development and continuous learning.</p>
+        </section>
+
+        <section id="portfolio">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <a href="#">
+                        <img src="Robot Arm.png" alt="Robot Arm ">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="#">
+                        <img src="first experiment.png" alt="Arduino Project">
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="#">
+                        <img src="cat_detect.png" alt=" Object Detection Project">
+                    </a>
+                </div>
+                </div>
+        </section>
+    </main>
+    
+
+    <p id="current-time"></p>
+</section>
+
+</main>
+    
+  <footer>
+        <div class="footer-content">
+            <p> contact me:</p>
+            <p>E-mail: <a href="mailto:manal_ma8877@outlook.sa">manal_ma8877@outlook.sa</a></p>
+            <p>Github: <a href="https://github.com/Manal467">https://github.com/Manal467</a></p>
+            <p> </p>
+        </div>
+    </footer>
+
+   <script>
+        function updateTime() {
+            const now = new Date();
+            const time = now.toLocaleTimeString('en-US', { hour12: false });
+            document.getElementById('time-display').textContent = time;
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>
