@@ -8,7 +8,7 @@ Personal Website Project This project is a simple personal website created using
   
   Allows you to navigate between page sections smoothly.
   
-- "My Works" Section:
+- "My Portfolio" Section:
   
   Displays images inside clickable circular rectangles.
   
