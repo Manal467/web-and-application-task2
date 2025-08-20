@@ -1,0 +1,84 @@
+/*css */
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: left; 
+}
+
+/*menu*/
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* arrange the elements next to each other*/
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* remove lines*/
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease; /* effect of color change on hover*/
+}
+
+nav a:hover {
+    color: #ffd700; 
+}
+
+/* page section formatting*/
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #333;
+}
+ 
+ .portfolio-grid {
+     display: grid; 
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 20px; 
+     margin-top: 20px;
+ }
+ 
+ .portfolio-item {
+     background-color: #fff;
+     border-radius: 8px;
+     overflow: hidden;
+     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+ }
+ 
+ .portfolio-item a {
+     display: block;
+     text-decoration: none;
+ }
+ 
+ .portfolio-item img {
+     width: 100%; 
+     height: 200px;
+     object-fit: cover; 
+     border-radius: 50%; 
+     transition: transform 0.3s ease-in-out;
+ }
+ 
+ .portfolio-item a:hover img {
+     transform: scale(1.05);
+ }
